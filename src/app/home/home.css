@@ -1,0 +1,71 @@
+/* Hero Section Styling */
+.hero-section {
+  height: 80vh;
+  background-attachment: fixed;
+  position: relative;
+}
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Navbar */
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Features Cards */
+.feature-card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Doctor Image */
+.doctor-img {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.doctor-img:hover {
+  transform: scale(1.05);
+}
+
+/* Animations (Animate.css like feel) */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
