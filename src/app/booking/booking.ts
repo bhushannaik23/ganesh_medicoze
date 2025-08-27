@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   selector: 'app-booking',
   imports: [FormsModule, HttpClientModule, CommonModule],
   templateUrl: './booking.html',
-  styleUrls: ['./booking.css'],
+  //  styleUrls: ['./booking.css'],
   standalone: true,
 })
 export class BookingComponent {
